@@ -1,0 +1,13 @@
+[submodule "src/fmt"]
+	path = extern/fmt
+	url = https://github.com/fmtlib/fmt.git
+[submodule "extern/amrex"]
+	path = extern/amrex
+	url = https://github.com/AMReX-Codes/amrex.git
+[submodule "extern/grackle_data_files"]
+	path = extern/grackle_data_files
+	url = https://github.com/grackle-project/grackle_data_files.git
+[submodule "extern/Microphysics"]
+	path = extern/Microphysics
+	url = https://github.com/psharda/Microphysics
+	branch = development

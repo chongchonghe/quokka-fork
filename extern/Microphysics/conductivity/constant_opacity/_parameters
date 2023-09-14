@@ -1,0 +1,6 @@
+@namespace: conductivity
+
+const_opacity        real     7.0d-2
+
+
+

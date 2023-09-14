@@ -1,0 +1,9 @@
+CEXE_headers += network_properties.H
+
+ifeq ($(USE_REACT),TRUE)
+  CEXE_headers += actual_network.H
+  CEXE_headers += actual_rhs.H
+  CEXE_headers += rprox_rates.H
+
+  USE_SCREENING = TRUE
+endif

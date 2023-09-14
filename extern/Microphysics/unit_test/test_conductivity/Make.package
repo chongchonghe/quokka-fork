@@ -1,0 +1,8 @@
+CEXE_sources += main.cpp
+
+CEXE_headers += test_cond.H
+
+CEXE_sources += variables.cpp
+CEXE_sources += conductivity_util.cpp
+CEXE_headers += variables.H
+

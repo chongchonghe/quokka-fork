@@ -1,0 +1,25 @@
+ifeq ($(USE_SIMPLIFIED_SDC), TRUE)
+  CEXE_headers += actual_integrator_simplified_sdc.H
+else
+  ifneq ($(USE_TRUE_SDC), TRUE)
+    CEXE_headers += actual_integrator.H
+  endif
+endif
+
+# by default we do not enable Jacobian caching on GPUs to save memory
+ifneq ($(USE_CUDA), TRUE)
+  DEFINES += -DALLOW_JACOBIAN_CACHING
+endif
+
+ifeq ($(USE_JACOBIAN_CACHING), TRUE)
+  DEFINES += -DALLOW_JACOBIAN_CACHING
+endif
+
+CEXE_headers += vode_dvode.H
+CEXE_headers += vode_type.H
+CEXE_headers += vode_dvhin.H
+CEXE_headers += vode_dvjac.H
+CEXE_headers += vode_dvjust.H
+CEXE_headers += vode_dvnlsd.H
+CEXE_headers += vode_dvset.H
+CEXE_headers += vode_dvstep.H

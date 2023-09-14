@@ -1,0 +1,7 @@
+@namespace: conductivity
+
+const_conductivity   real     1.0d0
+
+
+
+

@@ -1,0 +1,22 @@
+CEXE_headers += ArrayUtilities.H
+
+CEXE_headers += eos.H
+CEXE_headers += eos_data.H
+CEXE_headers += eos_type.H
+CEXE_headers += eos_override.H
+
+CEXE_sources += eos_data.cpp
+
+CEXE_headers += network.H
+CEXE_headers += rhs_type.H
+CEXE_headers += tfactors.H
+CEXE_sources += network_initialization.cpp
+
+ifeq ($(USE_CONDUCTIVITY), TRUE)
+  CEXE_headers += conductivity.H
+endif
+
+ifeq ($(USE_REACT), TRUE)
+  CEXE_headers += burn_type.H
+  CEXE_headers += burner.H
+endif

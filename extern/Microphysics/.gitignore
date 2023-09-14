@@ -1,0 +1,96 @@
+# latex intermediates
+*.aux
+*.log
+*.dvi
+*.toc
+*.bbl
+*.blg
+*.lof
+*.lot
+*.idx
+*.ilg
+*.ind
+Docs/*/*.pdf
+Docs/*/*.ps
+MaestroUsersGuide.out
+MaestroUsersGuide.old
+
+
+# emacs temporaries
+*~
+\#*
+.#*
+
+
+# Files created at compile-time
+probin.f90
+probin.F90
+extern.F90
+build_info.f90
+_build
+*.mod
+*.so
+
+# executable
+*.exe
+gmon.out
+
+
+# build stuff
+t/
+d/
+f/
+o/
+tmp_build_dir/
+
+# runtime files
+maestro-overview.out
+*diag.out
+plt?????
+chk?????
+*plt?????
+*chk?????
+Backtrace.*
+react_*_dtE??
+react_*_mode?
+
+# python
+*.pyc
+Untitled0.ipynb
+
+
+# eos
+helm_table.dat
+!EOS/helmholtz/helm_table.dat
+
+# URCA tables
+23Na-23Ne_electroncapture.dat
+!networks/ignition_reaclib/URCA-simple/23Na-23Ne_electroncapture.dat
+23Ne-23Na_betadecay.dat
+!networks/ignition_reaclib/URCA-simple/23Ne-23Na_betadecay.dat
+
+# unit testing
+react_3alpha*
+*.ex
+extern.f90
+
+
+# sphinx
+build/
+doxy_files
+sphinx_docs/source/runtime_parameters.rst
+
+
+# C++ parameters
+extern_parameters.H
+extern_parameters.cpp
+extern_parameters_F.H
+
+
+# old plotfiles
+*.old.*[0-9]
+
+# Jupyter stuff
+.ipynb_checkpoints/
+
+20180319default2

@@ -1,0 +1,7 @@
+@namespace: unit_test
+
+small_temp    real       1.e5
+small_dens    real       1.e5
+
+density       real       1.d7
+temperature   real       3.d9
